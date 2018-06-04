@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="1024px-Wikipedia%27s_W.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>WikiSearch</title>
+  <meta name="description" content="WikiSearch">
+
+<!-- FONTS -->
+    <!-- GOOGLE-FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <!-- http://fontawesome.io/icons/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery CSS (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- BOOT STRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- BOOT STRAP JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- MAIN CSS | STYLE -->
+    <link rel="stylesheet" href="styles.css" rel="stylesheet"/>
+
+<!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+<!-- SCRIPT FOR JSON -->
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+  <nav class="theNAV">
+    <a class="col" target="_blank" href="https://github.com/gomez-eric"><i class="navButtons fa fa-github-square fa-3x"></i></a>
+
+  </nav>
+
+
+    <div class="container">
+
+<!-- TOP INFORMATION ROW -->
+      <div id="centermagic" class="centered row">
+
+<!-- JUMBOTRON -->
+        <div class="jumbotron">
+          <h1 class="text-center daMainTitle"><i class="fa fa-wikipedia-w"></i>ikiSearch </h1>
+          <div class="container mainContainer">
+            <!-- PARAGRAPH HERE -->
+            <p class="thisPara">Welcome to <i class="fa fa-wikipedia-w"></i>ikiSearch.</p>
+            <div id="daHint">
+              <p style="font-size: 80%;" class="thisPara">HINT: Hit <b style="color: gray;">ENTER</b> to search or <b  style="color: gray;">ESC</b> to reset.</p>
+            </div>
+            <!-- FORM BABY -->
+            <div class="daForm">
+
+
+              <input type="text" class="form-control col" placeholder="SEARCH" id="searchText" name="search" value=""/>
+
+              <div class"row align-items-center">
+                <i id="getValue" class="col daButtons fa fa-search"></i>
+                <i id="resetValue" class="col daButtons fa fa-times"></i>
+                <a class="col" target="_blank" href="https://en.wikipedia.org/wiki/Special:Random"><i class="daButtons fa fa-question-circle-o"></i></a>
+              </div>
+
+              <label>Search Limit:</label>
+              <div class="myLimit btn-group col" data-toggle="buttons">
+                <label class="daRadio btn active">
+                  <input type="radio" name="radio" id="option_1" value="5" autocomplete="off" checked> 05
+                </label>
+                <label class="daRadio btn">
+                  <input type="radio" name="radio" id="option_2" value="10" autocomplete="off"> 10
+                </label>
+                <label class="daRadio btn">
+                  <input type="radio" name="radio" id="option_3" value="15" autocomplete="off"> 15
+                </label>
+                <label class="daRadio btn">
+                  <input type="radio" name="radio" id="option_4" value="20" autocomplete="off"> 20
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+            <p id="searchLength" class="thisBox"></p>
+            <div id="numberSearches" class="container-fluid"></div>
+
+          </div>
+
+        </div>
+
+<!-- BUTTON CONTAINER -->
+        <div class="container-fluid bg-3 text-center">
+          <!--
+          <button id="buttonId" class="btn btn-block btn-lg" alt="ALTERNATE">NAME</button>
+          -->
+
+        </div>
+
+<!-- TOP INFORMATION ROW /END -->
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>
